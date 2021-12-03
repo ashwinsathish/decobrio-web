@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decobrio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">decobrio</a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Designs</a></li>
+                    <li><a href="#">Projects</a></li>
+
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a class="contact" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <h1>Elengance. Inspired by you. </h1>
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="template">Find what you're looking for ...</label>
+                        <input type="text" name="template" id="template" placeholder="For eg. Master bedroom designs">
+                    </div>
+                    <input type="button" value="Search designs">
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="elevated">
+        <div class="left-col">
+            <h2>Urban Lifestyle. Elevated. </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia iste cumque nam, vero ipsam distinctio excepturi? Porro accusantium debitis nihil maxime, harum optio voluptatem? Enim nisi aut sapiente sequi!</p>
+        </div>
+    <img src="images/bed.jpg">    
+    </section>
+    <section class="designs">
+        <h1>Experience Luxury</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim soluta incidunt magni molestiae expedita minus perspiciatis laudantium autem officia minima quaerat, accusantium ea quidem doloribus ipsam eveniet recusandae sint totam.</p>
+        <div class="scrolling-wrapper">
+            <div class="living"><input type="button" value="Living rooms"></div>
+            <div class="bed"><input type="button" value="Bedrooms"></div>
+            <div class="lobby"><input type="button" value="Lobby"></div>
+            <div class="kitchen"><input type="button" value="Modular Kitchen"></div>
+            <div class="dining"><input type="button" value="Dining room"></div>
+            <div class="kids"><input type="button" value="Kids room"></div>
+            <div class="out"><input type="button" value="Outdoor spaces"></div>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul>
+                <li>Fully customizable designs</li>
+                <li>Imported superior-quality materials</li>
+                <li>Guarenteed 45 day completion</li>
+                <li>Best financing & EMI options</li>
+                <li>100% customer satisfaction</li>
+                <li>Other additional benefits</li>
+            </ul>
+        </div>
+        <img src="images/balcony.jpg">
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem suscipit ullam, ipsa rem provident obcaecati in magnam ex, exercitationem, mollitia odio ratione eligendi animi doloremque earum placeat soluta eius explicabo?</blockquote>
+                    <cite>- James Brand</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem suscipit ullam, ipsa rem provident obcaecati in magnam ex, exercitationem, mollitia odio ratione eligendi animi doloremque earum placeat soluta eius explicabo?</blockquote>
+                    <cite>- Melinda Pane</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem suscipit ullam, ipsa rem provident obcaecati in magnam ex, exercitationem, mollitia odio ratione eligendi animi doloremque earum placeat soluta eius explicabo?</blockquote>
+                    <cite>- Steve Gary</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact us</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="For eg. abc@xyz.com">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <img src="images/logo.png" alt="debobrio">
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobileBtn=document.getElementById('mobile-cta');
+            nav=document.querySelector('nav');
+            mobileBtnExit=document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click',()=>{
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
+
+
